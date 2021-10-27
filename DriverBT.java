@@ -111,8 +111,10 @@ public class DriverBT
 			String leaf = scan.nextLine();
 			leaf = leaf.toUpperCase();		
 			
-			if(i != 1)
+			//skip first search because there will be no duplicates
+			if(i != 0)
 			{
+				//search for duplicates
 				for(int j = 0; j < leaves.length; j++)
 				{
 					while(leaf.equals(leaves[j]))
@@ -123,13 +125,14 @@ public class DriverBT
 					}
 				}
 			}
-			
 			leaves[i] = leaf;
 		}
+		
 		System.out.print("what is the parent node for " + leaves[1] + ": ");
 		String node1 = scan.nextLine();
 		node1 = node1.toUpperCase();
 		
+		//search for duplicates
 		for(int i = 0; i < nodes.length; i++)
 		{
 			while(node1.equals(leaves[i]) || node1.equals(nodes[i]))
@@ -145,6 +148,7 @@ public class DriverBT
 		String node2 = scan.nextLine();
 		node2 = node2.toUpperCase();
 		
+		//search for duplicates
 		for(int i = 0; i < nodes.length; i++)
 		{
 			while(node2.equals(leaves[i]) || node2.equals(nodes[i]))
@@ -160,6 +164,7 @@ public class DriverBT
 		String node3 = scan.nextLine();
 		node3 = node3.toUpperCase();
 		
+		//search for duplicates
 		for(int i = 0; i < nodes.length; i++)
 		{
 			while(node2.equals(leaves[i]) || node3.equals(nodes[i]))
