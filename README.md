@@ -1,4 +1,5 @@
 Brandon Leho (USERNAME: BrandonLeho), Brandon Lequang (USERNAME: Bvlvq), Sean Solomon (USERNAME: 1sean0).
+
 Brandon Leho was the lead in action and coded DriverBT.java. Solomon coded BinaryTree.java. Brandon Lequang coded BinaryNode.java.
 
 YT Link: https://youtu.be/8jJler7AQFc
